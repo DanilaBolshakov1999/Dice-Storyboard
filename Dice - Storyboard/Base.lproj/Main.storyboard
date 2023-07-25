@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice___Storyboard" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="L4s-fS-Bdh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="690-4x-90N">
+                                <rect key="frame" x="30" y="59" width="333" height="128"/>
+                            </imageView>
+                            <stackView opaque="NO" tag="14" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FxH-v4-QYu">
+                                <rect key="frame" x="0.0" y="421" width="393" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-od-hNt">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="100"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="OZ8-6E-Oqt">
+                                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="100"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WB-FO-ul4">
+                                <rect key="frame" x="120" y="681" width="153" height="50"/>
+                                <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" weight="ultraLight" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMY-NX-FT8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L4s-fS-Bdh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3c2-F5-tVU"/>
+                            <constraint firstItem="L4s-fS-Bdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4t3-UL-Ij8"/>
+                            <constraint firstItem="FxH-v4-QYu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ONc-Nz-bYc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9WB-FO-ul4" secondAttribute="bottom" constant="87" id="ZtS-W7-KAc"/>
+                            <constraint firstItem="9WB-FO-ul4" firstAttribute="top" secondItem="FxH-v4-QYu" secondAttribute="bottom" constant="160" id="ajO-QL-9g5"/>
+                            <constraint firstItem="690-4x-90N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="b4U-Qs-1dA"/>
+                            <constraint firstAttribute="bottom" secondItem="L4s-fS-Bdh" secondAttribute="bottom" id="dga-rv-hNV"/>
+                            <constraint firstAttribute="trailing" secondItem="FxH-v4-QYu" secondAttribute="trailing" id="dhx-qe-Zdz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="690-4x-90N" secondAttribute="trailing" constant="30" id="fqf-2C-Thb"/>
+                            <constraint firstItem="690-4x-90N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jx3-h4-gVc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9WB-FO-ul4" secondAttribute="trailing" constant="120" id="qP9-Vp-Oqn"/>
+                            <constraint firstItem="9WB-FO-ul4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="rPp-ch-TeN"/>
+                            <constraint firstItem="L4s-fS-Bdh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ubd-It-GnF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageViewOne" destination="ZzK-od-hNt" id="Slk-E2-rsB"/>
+                        <outlet property="diceImageViewTwo" destination="OZ8-6E-Oqt" id="QSX-3d-WFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="-3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiceOne" width="100" height="100"/>
+        <image name="DiceeLogo" width="196" height="128"/>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
